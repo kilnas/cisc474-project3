@@ -1,0 +1,97 @@
+The Thing: An online app for selling specific things
+
+Structural Stuff
+- users
+- items
+    - categories
+        - pizza
+        - pets
+        - grunge
+        - used celebrity items
+        - cat clothing
+    - location
+
+
+DATABaSE STUFF
+- Users
+- Items
+- Categories*
+
+
+
+Users -> gallery (store*) -> itemlist
+
+Users
+- id
+- email
+- username
+- password * ? SILBER
+- name
+- contact info
+- ITEM LIST - [list of item ids?] if No Time for Store
+- gallery (store*) (item list,id, possibly name & description) [seperate json object] *
+- past purchases*
+- reviews*
+- profile - username, about me, feedback rating, photo *
+
+Review * [seperate json object]
+- reviewee
+- star feedback rating
+- item bought
+- description/feedback
+- photo?
+- reviewer
+
+
+item
+- id
+- quantity available?
+- location
+- name
+- price
+- shipping
+- category
+- image
+- description
+- owner/contact info (seller id)
+
+
+- bidding if time
+
+Front End Functions
+- search for items
+    - by key word *
+    - filter by category
+    - filter/sort by reviews? *
+    - filter/sort by price? *
+- buy item -> quantity goes down/remove if 0
+- post item review*
+- search for a user by name
+- search for a store by name*
+- view a store page*
+- view a user's profile
+- view a single item
+- view own purchase history*
+
+
+API Functions
+- get user by username/id/emails
+- get item by id
+- get list of items in certain category
+- get list of items by user
+- get list of all users
+- get list of all items
+- get list of items containing key word*
+- put new quantity in for item (change item values)
+- delete item from gallery/user (store*)
+- post new item to gallery/user (store*)
+- post new user
+- post new item to user's past purchase list*
+- post review*
+
+Home Display
+- search bar/search button that creates bar
+- my profile
+- featured items Deals!
+- category buttons (Featured Categories)?
+- logo?

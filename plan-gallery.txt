@@ -1,0 +1,100 @@
+The Thing: An online gallery for people who want to show off their collections and feel confidence and prestige
+Hoarders Unlimited
+Collectia
+My very first Collection
+Portfolio me me
+
+
+Structural Stuff
+- users
+- items
+    - categories
+        - pizza
+        - pets
+        - grunge
+        - used celebrity items
+        - cat clothing
+        
+
+
+
+DATABaSE STUFF
+collections
+- Users
+- Items
+- Categories*
+
+
+
+Users -> gallery -> itemlist
+
+Users
+- id
+- email
+- username
+- password * ? SILBER
+- name
+- contact info
+- galleryList (users can have multiple galleries)
+- gallery (list itemID list, description, photo, galleryid, votes, comments* name, description, category) [seperate json object] *
+- profile - username, about me, popularity rating, photo*
+
+
+Searching for items vs. searching for galleries?
+Do we just search through every user and every gallery list and every gallery's name/description??????
+Or do we put it in its own collection db????????????????????????????????????????????????????
+
+item
+- id
+- name
+- price*
+- category
+- image/photo
+- description
+- owner (user id)
+
+
+
+
+Front End Functions
+- search for galleries
+    - by key word/tag*
+    - filter by category
+    - filter/sort by popularity *
+- post gallery comment*
+- vote + or - for gallery
+- search for a user by name
+- search for a gallery by name*
+- view a gallery page*
+- view a user's profile
+- view a single item
+- view own items
+- create gallery
+- edit gallery
+- delete item from database 4EVER
+- delete item from gallery only
+
+
+
+API Functions (Create Read Update Delete)
+- get user by username/id/emails
+- get item by id
+- get list of items in certain category
+- get list of items by user
+- get list of all users
+- get list of all items
+- get list of items containing key word*
+- delete item from gallery/user (store*)
+- delete item from database
+- post new item - add to DB Collection and gallery/user (store*)
+- post new user
+- post new gallery - *maybe option for adding previously uploaded items
+
+
+
+Home Display
+- search bar/search button that creates bar
+- my profile
+- featured collections / popular users / popular gallleries
+- category buttons (Featured Categories)?
+- logo?

@@ -1,0 +1,28 @@
+./mongod --repair
+
+
+./mongod
+
+grunt
+
+
+
+WEB TECH FINAL
+
+run grunt and ./mongod in separate terminal windows
+
+only one person can run mongo in workspace, but multiple people can access by typing "mongo" in bash.
+
+if unclean shutdown:  go to data directory & type 
+./mongod --repair
+
+
+HOW TO ADD MODULES:
+IN WORKSPACE DIRECTORY
+yo meanjs - maybe (might not need to do if already made app?)
+grunt
+cd appdirectory
+yo meanjs:crud-module <name> -adds empty modules
+
+HOW TO NOT USE DEFAULT DATABASE:
+go to config/env/development.js and change the path from "/mean-dev" to "/yourDBfolder"

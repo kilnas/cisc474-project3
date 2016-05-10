@@ -1,0 +1,22 @@
+Gallery Progress Checklist
+
+
+
+Gallery API functions
+[api~]
+- get all galleries [/galleries]
+- put gallery [/galleries/:galleryId]
+- post gallery [/galleries/:galleryId]
+- delete gallery [/galleries/:galleryId]
+- get gallery by id [/galleries/:galleryId]
+
+
+
+
+User API
+[api~]
+- get all users [/users]
+- put user [/users/:userId]
+- post user [/users/:userId]
+- delete users [users/:userId]
+- get users by id [/user/:gallieryId]

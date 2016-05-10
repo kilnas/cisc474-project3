@@ -1,0 +1,35 @@
+
+
+user
+{
+    id: mongo doit,
+    email: mrdonut@sugar.com,
+    username: mrdonut,
+    password: ****,
+    firstName: do,
+    lastName:  not,
+    galleryList: [array of gallery id],
+    profile: {
+        aboutMe: "i am donut",
+        picture: "http://www.slate.com/content/dam/slate/blogs/xx_factor/2014/doughnut.jpg.CROP.promo-mediumlarge.jpg"
+}
+
+
+gallery
+    {
+        id: id,
+        itemList: [list of item id/obj],
+        description: "these are the collection of sprinkles my grandmother gave me",
+        photo: "http://www.snackdata.com/bigimages/sprinkles.gif",
+        votes: 1,
+        name: "sprinkle collection",
+        category: "grunge"
+        userid: ??
+    }
+    
+    
+    
+var gallerySchema
+    
+
+

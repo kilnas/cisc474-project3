@@ -16,12 +16,15 @@ Structural Stuff
         - cat clothing
         
 
-
+Questions:
+Do we need different modules for Users and Galleries/Items?
+Should we use the automatically generated user module (includes authentication?)??
 
 DATABaSE STUFF
 collections
 - Users
-- Items
+- Galleries (lists of item IDs)
+- Items (not searchable by user, only within API?)
 - Categories*
 
 
@@ -33,25 +36,31 @@ Users
 - email
 - username
 - password * ? SILBER
-- name
-- contact info
+- firstName
+- lastName
 - galleryList (users can have multiple galleries)
-- gallery (list itemID list, description, photo, galleryid, votes, comments* name, description, category) [seperate json object] *
-- profile - username, about me, popularity rating, photo*
+- profile {about me, photo*}
 
 
 Searching for items vs. searching for galleries?
-Do we just search through every user and every gallery list and every gallery's name/description??????
-Or do we put it in its own collection db????????????????????????????????????????????????????
+we put it in its own collection db
 
 item
 - id
 - name
-- price*
-- category
 - image/photo
 - description
 - owner (user id)
+
+ gallery 
+ - list itemID list
+ - description
+ - photo
+ - galleryid
+ - votes
+ - comments* 
+ - name
+ - category
 
 
 
@@ -72,23 +81,27 @@ Front End Functions
 - create gallery
 - edit gallery
 - delete item from database 4EVER
-- delete item from gallery only
+
 
 
 
 API Functions (Create Read Update Delete)
-- get user by username/id/emails
+- get user by id DONE
+- get user by email/username
+- get gallery by id DONE
 - get item by id
-- get list of items in certain category
-- get list of items by user
-- get list of all users
-- get list of all items
-- get list of items containing key word*
+- get list of galleries in certain category
+- get list of galleries by user
+- get list of all users - DONE
+- get list of all galleries DONE
+- get list of galleries containing key word*
 - delete item from gallery/user (store*)
+- delete a gallery DONE
 - delete item from database
 - post new item - add to DB Collection and gallery/user (store*)
-- post new user
-- post new gallery - *maybe option for adding previously uploaded items
+- post new user - DONE
+- get user by id - DONE
+- post new gallery - DONE *maybe option for adding previously uploaded items
 
 
 
